@@ -280,6 +280,8 @@ for _, child in ipairs(test:GetChildren()) do
     end
 end
 
+wait(3)
+
 test:destroy() 
 
 Anim.TimePosition = startTime
