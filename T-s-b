@@ -280,6 +280,8 @@ for _, child in ipairs(test:GetChildren()) do
     end
 end
 
+test:destroy() 
+
 Anim.TimePosition = startTime
 
 Anim:AdjustSpeed(1)
