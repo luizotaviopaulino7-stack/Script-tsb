@@ -166,7 +166,7 @@ for _, child in ipairs(test:GetChildren()) do
     end
 end
 
-wait(3)
+wait(1)
 
 test:Destroy()
 Anim.TimePosition = startTime
