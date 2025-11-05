@@ -283,10 +283,9 @@ local startTime = 0.3
 
 Anim:Play()
 
-Anim:AdjustSpeed(0)
+Anim:AdjustSpeed(1)
 
-local Test = game.ReplicatedStorage.Emotes.VFX.VfxMods.Flasher.vfx.LastImpactFx.Attachment
-
+local Test = game.ReplicatedStorage.Resources.FiveSeasonsFX.CharFX.TP
 local test = Test:Clone()
 test.Parent = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 
@@ -297,7 +296,7 @@ for _, child in ipairs(test:GetChildren()) do
     end
 end
 
-wait(0.7)
+wait(0.4)
 
 test:Destroy()
 Anim.TimePosition = startTime
