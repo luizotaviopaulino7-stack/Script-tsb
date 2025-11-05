@@ -448,7 +448,7 @@ end
 
 local AnimAnim = Instance.new("Animation")
 
-AnimAnim.AnimationId = "rbxassetid://17106858586 "
+AnimAnim.AnimationId = "rbxassetid://15957376722"
 
 local Anim = Humanoid:LoadAnimation(AnimAnim)
 
@@ -502,7 +502,7 @@ end
 
 local AnimAnim = Instance.new("Animation")
 
-AnimAnim.AnimationId = "rbxassetid://13294790250"
+AnimAnim.AnimationId = "rbxassetid://10479335397"
 
 local Anim = Humanoid:LoadAnimation(AnimAnim)
 
@@ -564,7 +564,7 @@ end
 
 local AnimAnim = Instance.new("Animation")
 
-AnimAnim.AnimationId = "rbxassetid://14900168720"
+AnimAnim.AnimationId = "rbxassetid://10503381238"
 
 local Anim = Humanoid:LoadAnimation(AnimAnim)
 
@@ -620,7 +620,7 @@ end
 
 local AnimAnim = Instance.new("Animation")
 
-AnimAnim.AnimationId = "rbxassetid://12447247483"
+AnimAnim.AnimationId = "rbxassetid://10470104242"
 
 local Anim = Humanoid:LoadAnimation(AnimAnim)
 
@@ -682,9 +682,9 @@ local replacementAnimations = {
 
     ["10469639222"] = "rbxassetid://13295919399", --punch3
 
-    ["10469643643"] = "rbxassetid://13532604085", --punch4
+    ["10469643643"] = "rbxassetid://13294471966", --punch4
 
-    ["17859015788"] = "rbxassetid://12684185971", --downslam finisher
+    ["17859015788"] = "rbxassetid://17859015788", --downslam finisher
 
     ["11365563255"] = "rbxassetid://14516273501" --punch idk
 
