@@ -273,7 +273,7 @@ end
 
 local AnimAnim = Instance.new("Animation")
 
-AnimAnim.AnimationId = "rbxassetid://17838619895"
+AnimAnim.AnimationId = "rbxassetid://10471336737"
 
 local Anim = Humanoid:LoadAnimation(AnimAnim)
 
@@ -285,20 +285,6 @@ Anim:Play()
 
 Anim:AdjustSpeed(1)
 
-local Test = game.ReplicatedStorage.Resources.FiveSeasonsFX.CharFX.TP
-local test = Test:Clone()
-test.Parent = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
-
-for _, child in ipairs(test:GetChildren()) do
-    if child:IsA("ParticleEmitter") then
-        child:Emit(15)
-        child.Enabled = true
-    end
-end
-
-wait(0.4)
-
-test:Destroy()
 Anim.TimePosition = startTime
 
 Anim:AdjustSpeed(1)
@@ -351,7 +337,7 @@ end
 
 local AnimAnim = Instance.new("Animation")
 
-AnimAnim.AnimationId = "rbxassetid://16515850153"
+AnimAnim.AnimationId = "rbxassetid://12510170988"
 
 local Anim = Humanoid:LoadAnimation(AnimAnim)
 
@@ -462,7 +448,7 @@ end
 
 local AnimAnim = Instance.new("Animation")
 
-AnimAnim.AnimationId = "rbxassetid://15957376722"
+AnimAnim.AnimationId = "rbxassetid://12447707844"
 
 local Anim = Humanoid:LoadAnimation(AnimAnim)
 
