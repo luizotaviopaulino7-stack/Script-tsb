@@ -51,7 +51,7 @@ local baseButton = hotbarFrame:FindFirstChild("3").Base
 local ToolName = baseButton.ToolName
 
 
-ToolName.Text = "Instant Strike"
+ToolName.Text = "Mighty Uprise"
 
 
 local player = game.Players.LocalPlayer
@@ -297,7 +297,7 @@ for _, child in ipairs(test:GetChildren()) do
     end
 end
 
-wait(0.5)
+wait(0.7)
 
 test:Destroy()
 Anim.TimePosition = startTime
