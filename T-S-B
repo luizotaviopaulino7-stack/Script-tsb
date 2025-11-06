@@ -225,7 +225,7 @@ local startTime = 0
 
 Anim:Play()
 
-Anim:AdjustSpeed(1)
+Anim:AdjustSpeed(1.8)
 
 local Test =
 game.ReplicatedStorage.Emotes.VFX.RealAssets["Heart Strike"].Shock.Attachment
