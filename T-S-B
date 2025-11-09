@@ -15,7 +15,7 @@ local baseButton = hotbarFrame:FindFirstChild("1").Base
 local ToolName = baseButton.ToolName
 
 
-ToolName.Text = "Vortex Leak"
+ToolName.Text = "Move1"
 
 
 local player = game.Players.LocalPlayer
@@ -33,7 +33,7 @@ local baseButton = hotbarFrame:FindFirstChild("2").Base
 local ToolName = baseButton.ToolName
 
 
-ToolName.Text = "Ruthless Barrage"
+ToolName.Text = "Malevolent Strikes"
 
 
 local player = game.Players.LocalPlayer
@@ -141,7 +141,7 @@ end
 
 local AnimAnim = Instance.new("Animation")
 
-AnimAnim.AnimationId = "rbxassetid://13073745835"
+AnimAnim.AnimationId = "rbxassetid://10468665991"
 
 local Anim = Humanoid:LoadAnimation(AnimAnim)
 
@@ -152,19 +152,6 @@ local startTime = 0
 Anim:Play()
 
 Anim:AdjustSpeed(1.2)
-
-
-local Test = game.ReplicatedStorage.Emotes.VFX.VfxMods.Flasher.vfx.BlackFlashFx.Main
-
-local test = Test:Clone()
-test.Parent = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
-
-for _, child in ipairs(test:GetChildren()) do
-    if child:IsA("ParticleEmitter") then
-        child:Emit(15)
-        child.Enabled = true
-    end
-end
 
 Anim.TimePosition = startTime
 
@@ -223,6 +210,15 @@ local startTime = 0
 Anim:Play()
 
 Anim:AdjustSpeed(2.4)
+
+local v = game.ReplicatedStorage.Emotes.VFX.RealAssets.Pride.Symbol.Attachment:Clone()
+v.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+for _,c in ipairs(v:GetChildren()) do
+	if c:IsA("ParticleEmitter") then
+		c:Emit(19)
+		c.Enabled = false
+	end
+end
 
 Anim.TimePosition = startTime
 
