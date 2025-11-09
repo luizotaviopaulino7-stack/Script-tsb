@@ -441,7 +441,7 @@ end
 
 local AnimAnim = Instance.new("Animation")
 
-AnimAnim.AnimationId = "rbxassetid://12447707844"
+AnimAnim.AnimationId = "rbxassetid://133818134745501"
 
 local Anim = Humanoid:LoadAnimation(AnimAnim)
 
@@ -452,6 +452,15 @@ local startTime = 0
 Anim:Play()
 
 Anim:AdjustSpeed(0)
+
+local v = game.ReplicatedStorage.Emotes.VFX.RealAssets.Pride.Symbol.Attachment:Clone()
+v.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+for _,c in ipairs(v:GetChildren()) do
+	if c:IsA("ParticleEmitter") then
+		c:Emit(19)
+		c.Enabled = false
+	end
+end
 
 Anim.TimePosition = startTime
 
