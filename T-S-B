@@ -33,7 +33,7 @@ local baseButton = hotbarFrame:FindFirstChild("2").Base
 local ToolName = baseButton.ToolName
 
 
-ToolName.Text = "Malevolent Strikes"
+ToolName.Text = "Ruthless Combo"
 
 
 local player = game.Players.LocalPlayer
@@ -210,15 +210,6 @@ local startTime = 0
 Anim:Play()
 
 Anim:AdjustSpeed(2.4)
-
-local v = game.ReplicatedStorage.Emotes.VFX.RealAssets.Pride.Symbol.Attachment:Clone()
-v.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
-for _,c in ipairs(v:GetChildren()) do
-	if c:IsA("ParticleEmitter") then
-		c:Emit(19)
-		c.Enabled = false
-	end
-end
 
 Anim.TimePosition = startTime
 
