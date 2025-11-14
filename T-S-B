@@ -171,9 +171,6 @@ test:Destroy()
 
 Anim.TimePosition = startTime
 
-Anim:AdjustSpeed(100)
-
-
     end
 
 end
