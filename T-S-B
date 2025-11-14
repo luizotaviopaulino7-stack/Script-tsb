@@ -223,22 +223,6 @@ Anim:Play()
 
 Anim:AdjustSpeed(2.4)
 
-local Test = 
-game.ReplicatedStorage.Emotes.VFX.RealAssets["Heart Strike"].Shock.Attachment
-local test = Test:Clone()
-test.Parent = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
-
-for _, child in ipairs(test:GetChildren()) do
-    if child:IsA("ParticleEmitter") then
-        child:Emit(15)
-        child.Enabled = true
-    end
-end
-
-wait(4)
-
-test:Destroy
-
 Anim.TimePosition = startTime
 
 Anim:AdjustSpeed(1)
