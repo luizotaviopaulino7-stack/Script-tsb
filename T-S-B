@@ -151,7 +151,7 @@ local startTime = 0
 
 Anim:Play()
 
-Anim:AdjustSpeed(2)
+Anim:AdjustSpeed(1.5)
 
 local Test = game.ReplicatedStorage.Emotes.VFX.VfxMods.Flasher.vfx.BlackFlashFx.Main
 
