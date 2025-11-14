@@ -239,6 +239,10 @@ wait(4)
 
 test:Destroy
 
+Anim.TimePosition = startTime
+
+Anim:AdjustSpeed(1)
+
 
     end
 
