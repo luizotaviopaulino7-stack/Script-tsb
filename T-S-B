@@ -15,7 +15,7 @@ local baseButton = hotbarFrame:FindFirstChild("1").Base
 local ToolName = baseButton.ToolName
 
 
-ToolName.Text = "Move1"
+ToolName.Text = "Vortex Leak"
 
 
 local player = game.Players.LocalPlayer
