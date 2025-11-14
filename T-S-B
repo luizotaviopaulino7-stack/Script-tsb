@@ -400,6 +400,8 @@ Anim:Play()
 
 Anim:AdjustSpeed(1.6)
 
+wait(2.5
+
 local sound = Instance.new("Sound")
 sound.SoundId = "rbxassetid://70548890099510" -- Your sound ID
 sound.Parent = workspace 
