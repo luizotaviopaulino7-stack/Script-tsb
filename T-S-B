@@ -169,7 +169,6 @@ wait(0.6)
 
 test:Destroy()
 
-Anim.TimePosition = startTime
 
     end
 
