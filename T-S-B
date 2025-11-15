@@ -151,23 +151,7 @@ local startTime = 0
 
 Anim:Play()
 
-Anim:AdjustSpeed(1.5)
-
-local Test = game.ReplicatedStorage.Emotes.VFX.VfxMods.Flasher.vfx.BlackFlashFx.Main
-
-local test = Test:Clone()
-test.Parent = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
-
-for _, child in ipairs(test:GetChildren()) do
-    if child:IsA("ParticleEmitter") then
-        child:Emit(15)
-        child.Enabled = true
-    end
-end
-
-wait(0.6)
-
-test:Destroy()
+Anim:AdjustSpeed(1)
 
 
     end
