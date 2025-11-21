@@ -207,34 +207,6 @@ Anim:Play()
 
 Anim:AdjustSpeed(2.4)
 
-```lua
-workspace.Thrown.ChildAdded:Connect(function(d)
-    if d.Name == "Ring" then
-    game:GetService("RunService").Heartbeat:Connect(function()
-    d:Destroy()
-    end)
-    end
-    if d.Name == "Model" then
-    game:GetService("RunService").Heartbeat:Connect(function()
-    d:Destroy()
-    end)
-    end
-    end)
-    game.Players.LocalPlayer.Character.ChildAdded:Connect(function(d)
-    if d.Name == "BarrageBind" then
-    game:GetService("RunService").Heartbeat:Connect(function()
-    d:Destroy()
-    end)
-    end
-    end)
-    workspace.Terrain.Character.ChildAdded:Connect(function(d)
-    if d.Name == "SmokeBack" then
-    game:GetService("RunService").Heartbeat:Connect(function()
-    d:Destroy()
-    end)
-    end
-    end)```
-
 Anim.TimePosition = startTime
 
 Anim:AdjustSpeed(2.4)
